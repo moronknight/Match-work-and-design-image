@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+     android:background="@drawable/bg2"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:text="UserName :"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:hint="กรุณากรอกชื่อบัญชีผู้ใช้"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/edit2"
+        android:hint="กรุณากรอกIPserverให้ถูกต้อง"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+         android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/edit3"
+        android:textStyle="bold"
+        android:text="Password :"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edit3"
+         android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit2"
+        android:layout_below="@+id/edit2"
+        android:layout_marginTop="29dp"
+         android:hint="กรุณากรอกรหัสผ่าน"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="DigitalClock"
+        android:textSize="70px" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:text="Command :"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edit4"
+         android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/edit3"
+        android:hint="กรุณากรอกคำสั่งที่ท่านต้องการ"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/digitalClock1"
+        android:layout_marginTop="23dp"
+        android:textStyle="bold"
+        android:text="IP Server :"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="21dp"
+        android:text="Connect"
+        android:textStyle="bold"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="(c)ComputerEngineeringSUT#14"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

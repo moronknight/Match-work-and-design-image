@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:background="@drawable/bga"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit1"
+        android:layout_below="@+id/edit1"
+        android:hint="Username"
+        android:textColor="@color/sky"
+        android:textStyle="bold"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit2"
+        android:layout_below="@+id/edit2"
+        android:hint="Password"
+        android:inputType="textPassword"
+         android:textColor="@color/sky"
+        android:textStyle="bold"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit3"
+         android:textColor="@color/blue"
+        android:textSize="40px"
+        android:text="Conect" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="129dp"
+         android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Off Led1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button8"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="48dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:orientation="vertical"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="On Led1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical"
+         android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="On Led2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button1"
+        android:orientation="vertical"
+         android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Off Led2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+         android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="On Led3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignLeft="@+id/button3"
+        android:orientation="vertical"
+         android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Off Led3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical"
+         android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="On Led4" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignLeft="@+id/button5"
+        android:orientation="vertical"
+         android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Off Led4" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit1"
+        android:layout_alignBottom="@+id/edit1"
+        android:layout_alignParentLeft="true"
+        android:text="IPserver :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit2"
+        android:layout_alignBottom="@+id/edit2"
+        android:layout_alignParentLeft="true"
+        android:text="Username :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit3"
+        android:layout_alignBottom="@+id/edit3"
+        android:layout_alignParentLeft="true"
+        android:text="Password :"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="29dp"
+         android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="On LED All" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button9"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignRight="@+id/button7"
+        android:layout_toRightOf="@+id/button"
+         android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Off LED All" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Server IP"
+         android:textColor="@color/sky"
+        android:textStyle="bold"
+        android:orientation="vertical" >
+
+        <requestFocus />
+    </EditText>
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        
+        android:textStyle="bold"
+        android:textSize="50px"
+        android:text="DigitalClock" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button8"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="(c)Computer Engineering#14"
+         android:textSize="16px"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
